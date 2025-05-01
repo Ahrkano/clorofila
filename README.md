@@ -3,9 +3,6 @@
 
 Este projeto utiliza redes neurais convolucionais (CNNs) aplicadas ao conjunto de dados **PlantVillage** para identificar e classificar doenças em folhas de diferentes espécies de plantas. Ele foi desenvolvido como parte da disciplina de Visão Computacional e inclui técnicas de pré-processamento, modelagem em duas fases (detecção + classificação), avaliação de desempenho e geração de inferências.
 
-## 📁 Estrutura do Repositório
-📂 plant-disease-classifier/ ├── notebooks/ │ ├── 1_preprocessing.ipynb │ ├── 2_training_stage1.ipynb │ ├── 3_training_stage2.ipynb │ ├── 4_inference.ipynb ├── saved_models/ │ ├── stage1_weights.h5 │ ├── stage2_weights.h5 ├── data/ │ └── (não incluído - consulte instruções) ├── imgs/ │ ├── accuracy_curve.png │ ├── confusion_matrix.png ├── README.md └── requirements.txt
-
 
 ## 🎯 Objetivos
 
@@ -53,7 +50,3 @@ Também foi implementado um notebook para **testes com novas imagens externas**.
 - Matplotlib
 - Scikit-learn
 
-Instale com:
-
-```bash
-pip install -r requirements.txt
