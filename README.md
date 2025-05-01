@@ -1,2 +1,59 @@
-# clorofila
-Classificação de Doenças em Plantas com CNNs Utilizando o Conjunto de Dados PlantVillage
+# Clorofila
+# 🌿 Detecção e Classificação de Doenças em Folhas de Plantas com CNNs
+
+Este projeto utiliza redes neurais convolucionais (CNNs) aplicadas ao conjunto de dados **PlantVillage** para identificar e classificar doenças em folhas de diferentes espécies de plantas. Ele foi desenvolvido como parte da disciplina de Visão Computacional e inclui técnicas de pré-processamento, modelagem em duas fases (detecção + classificação), avaliação de desempenho e geração de inferências.
+
+## 📁 Estrutura do Repositório
+📂 plant-disease-classifier/ ├── notebooks/ │ ├── 1_preprocessing.ipynb │ ├── 2_training_stage1.ipynb │ ├── 3_training_stage2.ipynb │ ├── 4_inference.ipynb ├── saved_models/ │ ├── stage1_weights.h5 │ ├── stage2_weights.h5 ├── data/ │ └── (não incluído - consulte instruções) ├── imgs/ │ ├── accuracy_curve.png │ ├── confusion_matrix.png ├── README.md └── requirements.txt
+
+
+## 🎯 Objetivos
+
+- Detectar folhas com e sem doenças em imagens do PlantVillage.
+- Classificar o tipo de doença presente em folhas identificadas como contaminadas.
+- Avaliar o desempenho do modelo com métricas como acurácia, matriz de confusão e curvas de erro.
+- Realizar inferência em imagens externas.
+
+## 🧠 Modelagem
+
+O modelo foi construído em **dois estágios**:
+
+1. **Detecção (Binária)** – Modelo CNN treinado para classificar imagens entre *saudável* e *com doença*.
+2. **Classificação Multiclasse** – Segunda CNN treinada apenas com imagens do grupo "doente", para identificar o tipo específico de doença.
+
+### 🔍 Resultados
+
+- **Acurácia do modelo binário**: XX%
+- **Acurácia do modelo multiclasse**: XX%
+- **Matriz de confusão** e **curvas de acurácia/erro** disponíveis em `imgs/`
+
+<p align="center">
+  <img src="imgs/accuracy_curve.png" width="400"/>
+  <img src="imgs/loss_curve.png" width="400"/>
+</p>
+
+## 🧪 Inferência
+
+Também foi implementado um notebook para **testes com novas imagens externas**. Ele realiza o pré-processamento, aplica os dois estágios da rede e retorna a classificação final com a probabilidade associada.
+
+## 💾 Dataset
+
+- **Fonte**: PlantVillage (via Kaggle)
+- **Link**: [https://www.kaggle.com/datasets/emmarex/plantdisease](https://www.kaggle.com/datasets/emmarex/plantdisease)
+- **Formato**: imagens organizadas por pasta (classe)
+
+> ⚠️ As imagens do conjunto de dados não estão incluídas neste repositório. Recomenda-se o download direto pela fonte acima.
+
+## ⚙️ Requisitos
+
+- Python 3.10+
+- TensorFlow 2.x
+- OpenCV
+- NumPy
+- Matplotlib
+- Scikit-learn
+
+Instale com:
+
+```bash
+pip install -r requirements.txt
