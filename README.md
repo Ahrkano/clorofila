@@ -14,6 +14,7 @@ Este projeto utiliza redes neurais convolucionais (CNNs) aplicadas ao conjunto d
 ## 🧠 Modelagem
 
 Modelo CNN treinado para classificar imagens entre *saudável* e *doente*.
+Possui 10 camadas, incluindo 3 blocos convolucionais seguidos de camadas de pooling, uma camada de flatten e duas camadas densas, sendo a última responsável pela classificação final com função de ativação softmax.
 
 ### 🔍 Resultados
 
