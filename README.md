@@ -13,15 +13,12 @@ Este projeto utiliza redes neurais convolucionais (CNNs) aplicadas ao conjunto d
 
 ## 🧠 Modelagem
 
-O modelo foi construído em **dois estágios**:
-
-1. **Detecção (Binária)** – Modelo CNN treinado para classificar imagens entre *saudável* e *com doença*.
-2. **Classificação Multiclasse** – Segunda CNN treinada apenas com imagens do grupo "doente", para identificar o tipo específico de doença.
+Modelo CNN treinado para classificar imagens entre *saudável* e *doente*.
 
 ### 🔍 Resultados
 
-- **Acurácia do modelo binário**: XX%
-- **Acurácia do modelo multiclasse**: XX%
+- **Acurácia **: XX%
+- **Erro **: XX%
 - **Matriz de confusão** e **curvas de acurácia/erro** disponíveis em `imgs/`
 
 <p align="center">
