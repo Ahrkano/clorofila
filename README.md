@@ -18,8 +18,8 @@ Possui 10 camadas, incluindo 3 blocos convolucionais seguidos de camadas de pool
 
 ### 🔍 Resultados
 
-- **Acurácia **: XX%
-- **Erro **: XX%
+- **Acurácia **: 0.965
+- **Erro **: 0.095
 - **Matriz de confusão** e **curvas de acurácia/erro** disponíveis em `imgs/`
 
 <p align="center">
