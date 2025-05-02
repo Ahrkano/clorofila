@@ -23,7 +23,7 @@ Possui 10 camadas, incluindo 3 blocos convolucionais seguidos de camadas de pool
 - **Matriz de confusão** e **curvas de acurácia/erro** disponíveis em `imgs/`
 
 <p align="center">
-  <img src="imgs/accuracy_curve.png" width="400"/>
+  <img src="imgs/acc_curve.png" width="400"/>
   <img src="imgs/loss_curve.png" width="400"/>
 </p>
 
